@@ -1,0 +1,121 @@
+/* CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS VARIABLES FOR COLORS*/
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+  --gray-999: hsl(0, 0%, 1%);
+  
+  --font-family: 'Inter', sans-serif;
+  --font-size-base: 12px;
+  --font-size-big: 14px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/*BASE STYLES*/
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  background-color: var(--gray-999);
+  color: var(--white);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  line-height: 1.0;
+  height: 100vh;
+}
+
+/*TYPOGRAPHY*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  
+  
+  color: var(--white);
+}
+
+p {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--gray-700);
+  margin-bottom: 1rem;
+}
+
+/* LINKS*/
+a {
+  text-decoration: none;
+  font-weight: var(--font-weight-semibold);
+}
+
+.profile{
+    background-color: var(--gray-800);
+    border: 1px solid var(--gray-800);
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 20.3125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.25rem;
+   
+}
+
+.nel-pic{
+    border-radius: 100px;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+}
+
+.location{
+    color: var(--green);
+    
+}
+
+.about{
+    color: var(--white);
+    font-size: var(--font-size-base);
+}
+
+.socials{
+    box-sizing: border-box;
+    border: 1px solid var(--gray-800);
+    border-radius: 8px;
+    background-color: var(--gray-700);
+    width: 90%;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-bold);
+    margin-top: 10px;
+    padding: 10px 0;   
+}
+
+.socials a{
+  color: var(--white);
+}
+
+.socials:hover{
+    text-decoration: none;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
